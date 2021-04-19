@@ -1,0 +1,10 @@
+C:\Users\Roman\source\repos\dictionaryForms\dictionaryForms\bin\Debug\dictionaryForms.exe.config
+C:\Users\Roman\source\repos\dictionaryForms\dictionaryForms\bin\Debug\dictionaryForms.exe
+C:\Users\Roman\source\repos\dictionaryForms\dictionaryForms\bin\Debug\dictionaryForms.pdb
+C:\Users\Roman\source\repos\dictionaryForms\dictionaryForms\obj\Debug\dictionaryForms.csprojAssemblyReference.cache
+C:\Users\Roman\source\repos\dictionaryForms\dictionaryForms\obj\Debug\dictionaryForms.Form1.resources
+C:\Users\Roman\source\repos\dictionaryForms\dictionaryForms\obj\Debug\dictionaryForms.Properties.Resources.resources
+C:\Users\Roman\source\repos\dictionaryForms\dictionaryForms\obj\Debug\dictionaryForms.csproj.GenerateResource.cache
+C:\Users\Roman\source\repos\dictionaryForms\dictionaryForms\obj\Debug\dictionaryForms.csproj.CoreCompileInputs.cache
+C:\Users\Roman\source\repos\dictionaryForms\dictionaryForms\obj\Debug\dictionaryForms.exe
+C:\Users\Roman\source\repos\dictionaryForms\dictionaryForms\obj\Debug\dictionaryForms.pdb
