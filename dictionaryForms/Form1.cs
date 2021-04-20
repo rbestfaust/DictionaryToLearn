@@ -16,12 +16,29 @@ namespace dictionaryForms
 
     public partial class Form1 : Form
     {
+        //My local path for new words
+       static  string mainPath = @"C:\Program Files\Dictionary\";
+        static string pathEng = @"C:\Program Files\Dictionary\EngWords.txt";
+        static string pathRus = @"C:\Program Files\Dictionary\RusWords.txt";
 
-       
 
-       static public  int Counter()
+        static public  int Counter()
         {
             int count = 0;
+
+            if (File.Exists(pathEng))
+                count = File.ReadAllLines(pathEng).Length;
+            else
+            {
+                DirectoryInfo createDir = new DirectoryInfo(mainPath);
+                createDir.Create();
+
+                File.Create(pathRus);
+                File.Create(pathEng);
+
+
+            }
+
             count = File.ReadAllLines(pathEng).Length;
 
 
@@ -29,9 +46,7 @@ namespace dictionaryForms
             
 
         }
-        //My local path for new words
-       static string pathEng = @"C:\Users\Roman\Desktop\engWords\EngWords.txt";
-       static string pathRus = @"C:\Users\Roman\Desktop\engWords\RusWords.txt";
+        
         
         int commonCount = Counter();
 
@@ -45,6 +60,9 @@ namespace dictionaryForms
         public void Form1_Load(object sender, EventArgs e)
 
         {
+            if (commonCount == 0)
+                button2.Enabled = false;
+            
             //how many words base have
             label3.Text = commonCount.ToString();
             label4.Text = commonCount.ToString();
@@ -73,7 +91,8 @@ namespace dictionaryForms
                 label4.Text = Counter().ToString();
                 textBox1.Text = "";
                 textBox2.Text = "";
-
+            if (button2.Enabled == false)
+                button2.Enabled = true;
 
 
 
