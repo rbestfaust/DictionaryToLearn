@@ -27,9 +27,9 @@ namespace dictionaryForms
             
 
         }
-
+        //My local path for new words
        static string pathEng = @"C:\Users\Roman\Desktop\engWords\EngWords.txt";
-        string pathRus = @"C:\Users\Roman\Desktop\engWords\RusWords.txt";
+       static string pathRus = @"C:\Users\Roman\Desktop\engWords\RusWords.txt";
         
         int commonCount = Counter();
 
@@ -43,6 +43,7 @@ namespace dictionaryForms
         public void Form1_Load(object sender, EventArgs e)
 
         {
+            //how many words base have
             label3.Text = commonCount.ToString();
             label4.Text = commonCount.ToString();
             button1.Enabled = false;
@@ -54,20 +55,16 @@ namespace dictionaryForms
 
             
 
-
+            //for add new english word to base
             using (StreamWriter addToEngList = new StreamWriter(pathEng, true))
-                {
+               
                     addToEngList.WriteLine(textBox1.Text.ToUpper());
 
-                    
-                }
-
-                using (StreamWriter addToRusList = new StreamWriter(pathRus, true))
-                {
+            //for add new rissian word to base    
+            using (StreamWriter addToRusList = new StreamWriter(pathRus, true))
+                
                     addToRusList.WriteLine(textBox2.Text.ToUpper());
 
-                    
-                }
 
                 label3.Text = Counter().ToString();
                 label4.Text = Counter().ToString();
@@ -81,7 +78,7 @@ namespace dictionaryForms
 
         private void button2_Click(object sender, EventArgs e)
         {
-             
+             //for practice... in processing
            
             
         }
@@ -90,7 +87,7 @@ namespace dictionaryForms
 
         List<string> BaseOfWords()
         {
-            
+            //word base
 
             List<string> listEngwords = new List<string>();
 
@@ -106,17 +103,20 @@ namespace dictionaryForms
 
                 listRuswords.Add(item);
 
-            return listEngwords;
+            return listEngwords;      //collection for Checker and other reason
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
+            //check textbox on empty
+
             if (textBox1.Text == "" || textBox2.Text == "")
                 button1.Enabled = false;
             else
                 button1.Enabled = true;
-            Cheker(BaseOfWords());
+            //check on same words
+
+            Checker(BaseOfWords());  
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -128,10 +128,10 @@ namespace dictionaryForms
             
         }
 
-        void Cheker(List<string> collection)
+        void Checker(List<string> collection)
         {
             
-
+            //checker in person))
             
             foreach (var item in collection)
             {
