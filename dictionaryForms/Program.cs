@@ -8,6 +8,8 @@ namespace dictionaryForms
 {
     static class Program
     {
+        internal static Form1 mf  ;
+
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -16,6 +18,8 @@ namespace dictionaryForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            
+
             Application.Run(new Form1());
         }
     }

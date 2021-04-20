@@ -17,6 +17,8 @@ namespace dictionaryForms
     public partial class Form1 : Form
     {
 
+       
+
        static public  int Counter()
         {
             int count = 0;
@@ -47,6 +49,7 @@ namespace dictionaryForms
             label3.Text = commonCount.ToString();
             label4.Text = commonCount.ToString();
             button1.Enabled = false;
+            
         }
 
 
@@ -78,15 +81,18 @@ namespace dictionaryForms
 
         private void button2_Click(object sender, EventArgs e)
         {
-             //for practice... in processing
-           
-            
+            //for practice... in processing
+
+            Practice f2 = new Practice();
+            f2.Show();
         }
 
          
 
-        List<string> BaseOfWords()
+       static public List<string> BaseOfWords(bool lang)
         {
+            bool lang_ = lang;
+
             //word base
 
             List<string> listEngwords = new List<string>();
@@ -103,7 +109,8 @@ namespace dictionaryForms
 
                 listRuswords.Add(item);
 
-            return listEngwords;      //collection for Checker and other reason
+            return  lang_ ? listEngwords : listRuswords;      //collection for Checker and other reason
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -116,7 +123,7 @@ namespace dictionaryForms
                 button1.Enabled = true;
             //check on same words
 
-            Checker(BaseOfWords());  
+            Checker(BaseOfWords(true));  
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)

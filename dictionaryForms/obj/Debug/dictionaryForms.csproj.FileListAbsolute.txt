@@ -8,3 +8,4 @@ C:\Users\Roman\source\repos\dictionaryForms\dictionaryForms\obj\Debug\dictionary
 C:\Users\Roman\source\repos\dictionaryForms\dictionaryForms\obj\Debug\dictionaryForms.csproj.CoreCompileInputs.cache
 C:\Users\Roman\source\repos\dictionaryForms\dictionaryForms\obj\Debug\dictionaryForms.exe
 C:\Users\Roman\source\repos\dictionaryForms\dictionaryForms\obj\Debug\dictionaryForms.pdb
+C:\Users\Roman\source\repos\dictionaryForms\dictionaryForms\obj\Debug\dictionaryForms.Practice.resources
