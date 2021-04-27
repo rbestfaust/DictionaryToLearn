@@ -29,6 +29,7 @@ namespace dictionaryForms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -41,7 +42,7 @@ namespace dictionaryForms
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(333, 284);
+            this.button1.Location = new System.Drawing.Point(222, 272);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 53);
             this.button1.TabIndex = 2;
@@ -70,6 +71,8 @@ namespace dictionaryForms
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Honeydew;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(218, 112);
             this.label1.Name = "label1";
@@ -80,6 +83,7 @@ namespace dictionaryForms
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Honeydew;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(423, 112);
             this.label2.Name = "label2";
@@ -90,6 +94,7 @@ namespace dictionaryForms
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Honeydew;
             this.label3.Location = new System.Drawing.Point(330, 120);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
@@ -99,6 +104,7 @@ namespace dictionaryForms
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Honeydew;
             this.label4.Location = new System.Drawing.Point(536, 120);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
@@ -107,7 +113,7 @@ namespace dictionaryForms
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(566, 272);
+            this.button2.Location = new System.Drawing.Point(447, 272);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(150, 53);
             this.button2.TabIndex = 9;
@@ -119,6 +125,8 @@ namespace dictionaryForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
@@ -128,8 +136,9 @@ namespace dictionaryForms
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Dictionary";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
